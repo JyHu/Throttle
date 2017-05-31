@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 s.name         = "AUUThrottle"
 s.version      = "0.1.0"
-s.summary      = "An auto layout framework using VFL."
+s.summary      = "Throttle execution Framework."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ s.summary      = "An auto layout framework using VFL."
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description  = <<-DESC
-An auto layout framework using VFL and NSLayoutConstraint
+Throttle execution Framework.
 DESC
 
-s.homepage     = "https://github.com/JyHu/AUULayout"
+s.homepage     = "https://github.com/JyHu/Throttle"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -40,7 +40,7 @@ s.homepage     = "https://github.com/JyHu/AUULayout"
 #
 
 # s.license      = "MIT (example)"
-s.license      = { :type => "MIT", :file => "LICENSE" }
+s.license      = { :type => "MIT", :file => "License" }
 
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +64,7 @@ s.author             = { "JyHu" => "auu.aug@gmail.com" }
 #  the deployment target. You can optionally include the target after the platform.
 #
 
-s.platform     = :ios, "7.0"
+s.platform     = :ios, "8.0"
 
 #  When using multiple platforms
 # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ s.platform     = :ios, "7.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/JyHu/AUULayout.git", :tag => "0.2.0" }
+s.source       = { :git => "https://github.com/JyHu/Throttle.git", :tag => "0.1.0" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ s.source       = { :git => "https://github.com/JyHu/AUULayout.git", :tag => "0.2
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "VFLLayout/*.{h,m}"
+s.source_files  = "AUUThrottle/*.{h,m}"
 # s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHR-u4-Zat">
+                                <rect key="frame" x="16" y="28" width="51" height="31"/>
+                                <connections>
+                                    <action selector="execute:" destination="BYZ-38-t0r" eventType="valueChanged" id="qGW-T4-lzW"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="execute at start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2s-hu-3Ua">
+                                <rect key="frame" x="73" y="33" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fcw-mG-AF4">
+                                <rect key="frame" x="16" y="67" width="51" height="31"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="valueChanged" id="9YH-AR-KKG"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reset count when paused" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-5A-XGZ">
+                                <rect key="frame" x="73" y="72" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWR-t9-14w">
+                                <rect key="frame" x="16" y="106" width="55" height="30"/>
+                                <state key="normal" title="Resume"/>
+                                <connections>
+                                    <action selector="resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pam-ir-1O3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7C-wO-66p">
+                                <rect key="frame" x="16" y="144" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXJ-fw-KRd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I2s-hu-3Ua" firstAttribute="leading" secondItem="WMM-5A-XGZ" secondAttribute="leading" id="BGJ-pa-EJi"/>
+                            <constraint firstItem="S7C-wO-66p" firstAttribute="top" secondItem="jWR-t9-14w" secondAttribute="bottom" constant="8" symbolic="YES" id="HLQ-er-ntM"/>
+                            <constraint firstItem="Fcw-mG-AF4" firstAttribute="centerY" secondItem="WMM-5A-XGZ" secondAttribute="centerY" id="Mlz-RU-7mY"/>
+                            <constraint firstItem="AHR-u4-Zat" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UWf-v5-iTo"/>
+                            <constraint firstItem="Fcw-mG-AF4" firstAttribute="leading" secondItem="jWR-t9-14w" secondAttribute="leading" id="VDy-ui-hlT"/>
+                            <constraint firstItem="AHR-u4-Zat" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ft6-Fh-tdX"/>
+                            <constraint firstItem="Fcw-mG-AF4" firstAttribute="top" secondItem="AHR-u4-Zat" secondAttribute="bottom" constant="8" symbolic="YES" id="kse-g3-2Hb"/>
+                            <constraint firstItem="jWR-t9-14w" firstAttribute="leading" secondItem="S7C-wO-66p" secondAttribute="leading" id="mXT-gq-35G"/>
+                            <constraint firstItem="jWR-t9-14w" firstAttribute="top" secondItem="Fcw-mG-AF4" secondAttribute="bottom" constant="8" symbolic="YES" id="nlh-6h-i6C"/>
+                            <constraint firstItem="I2s-hu-3Ua" firstAttribute="leading" secondItem="AHR-u4-Zat" secondAttribute="trailing" constant="8" symbolic="YES" id="s15-ds-Qqx"/>
+                            <constraint firstItem="I2s-hu-3Ua" firstAttribute="centerY" secondItem="AHR-u4-Zat" secondAttribute="centerY" id="sY0-VC-6oo"/>
+                            <constraint firstItem="Fcw-mG-AF4" firstAttribute="leading" secondItem="AHR-u4-Zat" secondAttribute="leading" id="z9E-Ul-3WJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
